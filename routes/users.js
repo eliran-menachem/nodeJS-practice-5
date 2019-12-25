@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('users list');
+});
+router.get('/delete', function(req, res, next) {
+  res.send('delete user');
 });
 
 module.exports = router;
