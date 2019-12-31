@@ -47,22 +47,22 @@ router.post('/', (req, res, next) => {
   else {
     newId = (products.length) + 1;
   }
-  let newProduct = {
-    id: newId
-  }
-  products.push(newProduct)
+
+
+products.push({id:newId,name: req.body.name,price:req.body.price})
   res.json(products);
 
 })
 
-
-
+// [PUT// products/:id]
 router.put('/:id', (req, res, next) => {
   let found = products.find(p => p.id == req.params.id);
   if (found) {
-
+    
     res.json(found)
 
+  }else{
+    res.send('no exist').status(204)
   }
 });
 
