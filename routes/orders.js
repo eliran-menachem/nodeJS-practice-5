@@ -5,7 +5,8 @@ products = [
   { id: 1, name: "HDD", price: 600, weight: 25 },
   { id: 2, name: "Car", price: 80000, weight: 25000 },
   { id: 3, name: "Key", price: 10, weight: 10 },
-  { id: 4, name: "Shirt", price: 50, weight: 6 }
+  { id: 4, name: "Shirt", price: 50, weight: 6 },
+  { id: 5, name: "t-Shirt", price: 75, weight: 4 }
 ]
 orders = [
   { id: 1, date: "10-10-2019", sum: 2000, products: [3] },
